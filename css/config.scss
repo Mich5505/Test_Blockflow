@@ -2,14 +2,9 @@
 $color1B1B1B: #1B1B1B;
 
 
-
-
-
-
 //Fonts
 %side_bar_li{
     font-size: 16px;
-    
     font-style: normal;
     font-weight: 600;
     line-height: 24px;
@@ -18,19 +13,15 @@ $color1B1B1B: #1B1B1B;
 *{
     font-family: Inter;
 }
-
-//Класси
 html{
-    height: 100%;
-}
-body, .wrapper{
-    height: 100%;
+    background: #F6F7FA;
 }
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
-    border: 5px solid #a3a3a3;
-    background: #F6F7FA;
+    position: relative;
+    padding-left: 280px;
+    min-height: 100vh;
 }
 .d-flex{
     display: flex

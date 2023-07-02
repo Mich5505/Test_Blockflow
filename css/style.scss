@@ -1,16 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap');
 
-
-
-
 //Импортированные Файлы стилей scss
-@import "./config.css";
 @import "./reset.css";
 @import "./sidebar.scss";
 @import "./info.scss";
 @import "./form.scss";
-
-
 
 .main_conteiner{
     margin: 30px 62px 37px;

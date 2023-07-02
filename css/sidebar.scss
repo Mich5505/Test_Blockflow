@@ -1,7 +1,10 @@
 @import "./config.scss";
 
 .side_bar{
-    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    top: 0;
     max-width: 280px;
     width: 100%;
     border: 1px solid #c0c0c0;
@@ -32,6 +35,5 @@
                 }
             }
        }
-
     }
 }

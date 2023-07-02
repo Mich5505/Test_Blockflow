@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap");
-@import "./config.css";
 @import "./reset.css";
 .side_bar li a p {
   font-size: 16px;
@@ -14,18 +13,15 @@
 }
 
 html {
-  height: 100%;
-}
-
-body, .wrapper {
-  height: 100%;
+  background: #F6F7FA;
 }
 
 .wrapper {
   max-width: 1440px;
   margin: 0 auto;
-  border: 5px solid #a3a3a3;
-  background: #F6F7FA;
+  position: relative;
+  padding-left: 280px;
+  min-height: 100vh;
 }
 
 .d-flex {
@@ -73,7 +69,10 @@ body, .wrapper {
 }
 
 .side_bar {
-  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  top: 0;
   max-width: 280px;
   width: 100%;
   border: 1px solid #c0c0c0;
@@ -100,6 +99,74 @@ body, .wrapper {
   stroke: #1B1B1B;
 }
 
+.side_bar li a p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1B1B1B;
+}
+
+* {
+  font-family: Inter;
+}
+
+html {
+  background: #F6F7FA;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 280px;
+  min-height: 100vh;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
 .steps {
   padding: 48px 0;
   margin-bottom: 22px;
@@ -118,7 +185,6 @@ body, .wrapper {
   text-align: center;
   color: #8E99AB;
   font-size: 14px;
-  font-family: Inter;
   font-style: normal;
   font-weight: 500;
   line-height: 20px;
