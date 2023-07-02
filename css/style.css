@@ -1,0 +1,284 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&display=swap");
+@import "./config.css";
+@import "./reset.css";
+.side_bar li a p {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  color: #1B1B1B;
+}
+
+* {
+  font-family: Inter;
+}
+
+html {
+  height: 100%;
+}
+
+body, .wrapper {
+  height: 100%;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+  border: 5px solid #a3a3a3;
+  background: #F6F7FA;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-content-start {
+  justify-content: flex-start;
+}
+
+.justify-content-end {
+  justify-content: flex-end;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.justify-content-around {
+  justify-content: space-around;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-end {
+  text-align: end;
+}
+
+.side_bar {
+  height: 100%;
+  max-width: 280px;
+  width: 100%;
+  border: 1px solid #c0c0c0;
+  padding: 32px 16px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+}
+.side_bar li {
+  border-radius: 6px;
+  padding: 8px 12px;
+  margin-bottom: 4px;
+}
+.side_bar li a {
+  display: flex;
+  align-items: center;
+}
+.side_bar li a svg {
+  margin-right: 12px;
+}
+.side_bar li:hover {
+  background: rgba(31, 192, 174, 0.19);
+}
+.side_bar li:hover a svg path {
+  stroke: #1B1B1B;
+}
+
+.steps {
+  padding: 48px 0;
+  margin-bottom: 22px;
+}
+.steps .step .ready_circle {
+  width: 72px;
+  height: 72px;
+  border-radius: 72px;
+  background: #EAECF0;
+  box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2);
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 16px;
+}
+.steps .step p {
+  text-align: center;
+  color: #8E99AB;
+  font-size: 14px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.28px;
+}
+.steps .step .border_step {
+  height: 36px;
+  width: 144px;
+  box-sizing: border-box;
+}
+.steps .step.ready .ready_circle {
+  background-color: #1FC0AE;
+}
+.steps .step.active .ready_circle {
+  border: 1px solid #8E99AB;
+}
+.steps .step.ready p {
+  color: #1B1B1B;
+}
+.steps .step.ready .border_step {
+  border-bottom: 1.4px dashed #009FE3;
+}
+.steps .step.next .border_step {
+  border-bottom: 1.4px dashed #EAECF0;
+}
+
+.information, .delivery {
+  width: 50%;
+}
+
+.information {
+  background-color: #ffffff;
+}
+.information h3 {
+  text-align: left;
+  margin-bottom: 11px;
+  color: #1B1B1B;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+}
+.information:nth-child(1) {
+  margin-right: 20px;
+  border-radius: 12px;
+  padding: 20px 23px 8px 17px;
+  margin-top: 12px;
+}
+.information p {
+  color: #1B1B1B;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+}
+.information p:last-child {
+  color: #8E99AB;
+}
+
+.delivery {
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 12px 12px 0 0;
+  padding: 23px 25px;
+  margin-top: 12px;
+}
+.delivery h3 {
+  color: #1FC0AE;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 32.883px;
+}
+.delivery p {
+  color: #1FC0AE;
+  text-align: right;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+}
+
+.reorder_bagage {
+  border-radius: 12px;
+  background: #FFF;
+  margin-top: 14px;
+}
+.reorder_bagage form {
+  padding: 17px 20px 12px;
+}
+.reorder_bagage form h3 {
+  color: #1B1B1B;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.reorder_bagage form label {
+  color: #8E99AB;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.reorder_bagage form select {
+  color: #8E99AB;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 8px 20px 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #EAECF0;
+  background: #F9FAFB;
+  margin-top: 6px;
+  margin-bottom: 17px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url(../img/chevron-down.svg) no-repeat 98% 50%;
+}
+.reorder_bagage form select option {
+  font-size: inherit;
+  color: #1B1B1B;
+}
+.reorder_bagage form button {
+  align-self: flex-end;
+  border-radius: 8px;
+  background: #1FC0AE;
+  padding: 10px 16px;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  margin-top: 35px;
+  cursor: pointer;
+}
+.reorder_bagage form button:hover {
+  background: #199e8f;
+}
+.reorder_bagage form button:active {
+  background: #086459;
+  color: #ffffff;
+}
+
+.main_conteiner {
+  margin: 30px 62px 37px;
+  background: #F6F7FA;
+}
+.main_conteiner h1 {
+  color: #1B1B1B;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  letter-spacing: -0.96px;
+  text-align: center;
+  margin-bottom: 45px;
+}/*# sourceMappingURL=style.css.map */

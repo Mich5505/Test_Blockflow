@@ -1,0 +1,99 @@
+.steps{
+    padding: 48px 0;
+    margin-bottom: 22px;
+     .step{
+         .ready_circle{
+             width: 72px;
+             height: 72px;
+             border-radius: 72px;
+             background: #EAECF0;
+             box-shadow: 0px 7px 8px 0px rgba(34, 60, 80, 0.2); // Помилка в макеті
+             display: flex;
+             flex-direction: column;
+             margin: 0 auto 16px;
+         }
+         p{
+             text-align: center;
+             color: #8E99AB;
+             font-size: 14px;
+             font-style: normal;
+             font-weight: 500;
+             line-height: 20px;
+             letter-spacing: -0.28px;
+         }
+         .border_step{
+             height: 36px;
+             width: 144px;
+             box-sizing: border-box;
+         }
+         &.ready .ready_circle{
+             background-color: #1FC0AE;
+         }
+         &.active .ready_circle{
+             border: 1px solid #8E99AB;
+         }
+         &.ready p{
+             color: $color1B1B1B;
+         }
+         &.ready .border_step{
+             border-bottom: 1.4px dashed #009FE3;
+         }
+         &.next .border_step{
+             border-bottom: 1.4px dashed #EAECF0;
+         }
+     }
+ }
+.information, .delivery {
+    width: 50%;
+}
+.information{
+    background-color: #ffffff;
+    h3{
+        text-align: left;
+        margin-bottom: 11px;
+        color: #1B1B1B;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 27px;
+    }
+    &:nth-child(1){
+        margin-right: 20px;
+        border-radius: 12px;
+        padding: 20px 23px 8px 17px;
+        margin-top: 12px;
+    }
+    p{
+        color: #1B1B1B;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 24px;
+        &:last-child{
+            color: #8E99AB;
+        }
+    }
+}
+.delivery {
+    width: 50%;
+    background-color: #ffffff;
+    border-radius: 12px 12px 0 0;
+    padding: 23px 25px;
+    margin-top: 12px;
+    h3{
+        color: #1FC0AE;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 32.883px;
+    }
+    p{
+        color: #1FC0AE;
+        text-align: right;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+    }
+}
